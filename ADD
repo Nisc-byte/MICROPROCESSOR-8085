@@ -1,0 +1,20 @@
+
+;<NISCHAYA MAHARJAN CSIT2081017>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LXI H,1000H;
+MOV A,M;
+
+LXI H, 1001H;
+MOV B,M;
+
+ADD B;
+
+STA 1002H;
+hlt
