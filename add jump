@@ -1,0 +1,26 @@
+
+;<NISCHAYA MAHARJAN>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LDA 1000H;
+MOV B,A;
+
+LDA 1001H;
+ADD B;
+
+JNC NO_CARRY;
+
+MVI A,01H;
+STA 1003H;
+hlt
+
+NO_CARRY:
+	MVI A,00H;
+	STA 1003H;
+	HLT
