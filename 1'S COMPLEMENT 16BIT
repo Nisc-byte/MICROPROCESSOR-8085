@@ -1,0 +1,19 @@
+
+;<NISCHAYA MAHARJAN CSIT2081017>
+
+jmp start
+
+;data
+
+
+;code
+start: nop
+LDA 1000H;
+CMA;
+STA 1002H;
+
+LDA 1001H;
+CMA;
+STA 1003H;
+
+hlt
